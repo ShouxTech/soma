@@ -58,4 +58,11 @@ function Soma.isAlive(char: Model)
     return humanoid.Health > 0;
 end;
 
+function Soma.takeDamage(char: Model, amount: number)
+    local humanoid = Soma.humanoid(char);
+    if not humanoid then return; end;
+
+    humanoid:TakeDamage(amount);
+end;
+
 return Soma;

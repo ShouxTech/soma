@@ -13,6 +13,8 @@ declare namespace Soma {
 	function player(char: Model): Player | undefined;
 
 	function isAlive(char: Model): boolean;
+
+	function takeDamage(char: Model, amount: number): void;
 }
 
 export = Soma;
