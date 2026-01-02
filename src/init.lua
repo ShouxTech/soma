@@ -40,6 +40,13 @@ function Soma.rightLeg(char: Model)
     return char:FindFirstChild('Right Leg') :: BasePart?;
 end;
 
+function Soma.animator(char: Model)
+    local humanoid = Soma.humanoid(char);
+    if not humanoid then return; end;
+
+    return humanoid:FindFirstChildOfClass('Animator');
+end;
+
 function Soma.player(char: Model)
     return Players:GetPlayerFromCharacter(char);
 end;
