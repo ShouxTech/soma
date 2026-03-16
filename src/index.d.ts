@@ -3,6 +3,7 @@ declare namespace Soma {
 
 	function humanoid(char: Model): Humanoid | undefined;
 	function rootPart(char: Model): BasePart | undefined;
+	function head(char: Model): BasePart | undefined;
 	function torso(char: Model): BasePart | undefined;
 	function leftArm(char: Model): BasePart | undefined;
 	function rightArm(char: Model): BasePart | undefined;

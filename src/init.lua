@@ -20,6 +20,10 @@ function Soma.rootPart(char: Model)
     return char:FindFirstChild('HumanoidRootPart') :: BasePart?;
 end;
 
+function Soma.head(char: Model)
+    return char:FindFirstChild('Head') :: BasePart?;
+end;
+
 function Soma.torso(char: Model)
     return char:FindFirstChild('Torso') :: BasePart?;
 end;
